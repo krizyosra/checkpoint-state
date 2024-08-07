@@ -5,11 +5,8 @@ import Card from 'react-bootstrap/Card';
 
 class info extends React.Component{
 
-    componentDidMount(){
-        setInterval(() => {
-         this.setState({count:this.props.state.count+1})
-        }, 1000);
-      }
+  
+
    render(){
     
   return (
@@ -20,7 +17,7 @@ class info extends React.Component{
       <Card.Title>{this.props.state.Person.fullName}</Card.Title>
       <Card.Text>
       {this.props.state.Person.bio}
-      {this.props.state.count}
+  
       {this.props.state.Person.profession}
       </Card.Text>
       <Button variant="primary">Go somewhere</Button>
